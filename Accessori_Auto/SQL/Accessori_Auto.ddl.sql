@@ -31,8 +31,8 @@ CREATE TABLE Fornitura(
 	Quanto INT(5) NOT NULL,
 	PRIMARY KEY(MagazzinoId,AccessorioId),
 	CONSTRAINT FK_Magazzino FOREIGN KEY (MagazzinoId)
-    REFERENCES Magazzino(Id),
+    	REFERENCES Magazzino(Id),
 	CONSTRAINT FK_Accessorio FOREIGN KEY (AccessorioId)
-    REFERENCES Accessorio(Id)
+    	REFERENCES Accessorio(Id)
 );
 	
